@@ -19,13 +19,12 @@ Run `gulp build` to build site into `public` directory.
 
 ## Publishing
 
-To push to the main repository (assuming you have permissions):
-``
-
 To set up on your own fork:
 
-1. Make sure that your GitHub repo settings for the branch and directory of your GitHub pages is set to `master/gh-pages`.
-2. Run the following:
+1. Fork this repo.
+2. Clone to your machine: `$ git clone git@github.com:<USERNAME>/syndesis.io.git`
+2. Make sure that your GitHub repo settings for the branch and directory of your GitHub pages is set to `master/gh-pages`.
+3. Run the following:
 
 ```
 cd syndesis.io
@@ -38,3 +37,4 @@ git checkout master
 ./publish-to-gh-pages.sh
 ```
 
+Your published fork should now be running at https://<USERNAME>.github.io/syndesis.io/.
