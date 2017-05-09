@@ -1,7 +1,9 @@
-@import "./bootstrap/_variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './bootstrap/_variables';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 
-@import "icons";
+@import 'blog';
+@import 'colors';
+@import 'icons';
 
 
 ////////////////////////////////////////////////////////////////////////////////
