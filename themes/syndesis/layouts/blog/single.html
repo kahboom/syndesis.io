@@ -1,7 +1,9 @@
-<div class="blog"></div>
-
 {{ define "title"}} {{ .Title}} {{end}}
-{{ define "header"}} {{ partial "header" .}} {{end}}
+
+{{ define "header"}}
+{{ .Scratch.Set "IsSingle" false }}
+{{ partial "header" .}}
+{{end}}
 
 {{ define "main"}}
 <div itemscope itemtype="http://schema.org/BlogPosting">
