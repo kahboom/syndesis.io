@@ -1,17 +1,36 @@
-{{ define "title"}} {{ .Title}} {{end}}
-{{ define "header"}} {{ partial "header-docs" .}} {{end}}
-{{ define "main"}}
-<div id="docs main">
-  <div id="hero">
-    <h1> {{ .Title}} </h1>
-    <p class="hero-lead">
-      {{ .Params.bref | safeHTML .}}
-    </p>
+{{ define "title"}} {{ .Title }} {{ end }}
 
-  </div>
-  <div id="syndesis-component"
-       class="content">
-    {{ .Content}}
+{{ define "header"}}
+{{ partial "header-docs" .}}
+{{ end }}
+
+{{ define "main"}}
+
+<div itemscope>
+  {{ template "_internal/schema.html" .}}
+  <div id="post-box">
+    <div id="post"
+         itemprop="articleBody">
+
+      {{ .Content | safeHTML }}
+
+    </div>
+
+    <div class="form-subscribe">
+      <div id="form-subscribe-success"
+           style="display: none;"></div>
+      <div id="form-subscribe-box">
+        <h4>All about Redactor, Grafs and Kube.</h4>
+        <p>Monthly news &amp; updates. Just straight to the point.</p>
+
+        <div class="form-subscribe-twitter">
+          <div>or</div>
+          <a href="http://twitter.com/jebli_7">Follow us on Twitter</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 {{ end }}
+{{ define "footer"}} {{ partial "footer.html" .}} {{ end }}
