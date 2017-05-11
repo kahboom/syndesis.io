@@ -7,32 +7,72 @@
 }
 
 .toc {
-  @include media-breakpoint-up(lg) {
-    flex: 0 0 314px;
+  #TableOfContents {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px 10px 20px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 10px;
+
+      li {
+        display: block;
+      }
+    }
+
+    &>ul>li>ul>li>a,
+    &>ul>li>a {
+      font-weight: bold;
+      margin: 0 2px;
+    }
+
+    &>ul>li>ul>li>a {
+      font-style: italic;
+    }
   }
 }
 
-#TableOfContents{
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 10px 20px 10px 20px;
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 10px;
+////////////////////////////////////////////////////////////////////////////////
+// MOBILE ADJUSTMENTS
+//
+// Size Reference:
+// - Extra small devices (xs) - Portrait phones (<544px)
+// - Small devices (sm) - Landscape phones (≥544px - <768px)
+// - Medium devices (md) - Tablets (≥768px - <992px)
+// - Large devices (lg) - Desktops (≥992px - <1200px)
+// - Extra large devices (xl) - Desktops (≥1200px)
+//
+// Responsive Breakpoints:
+// - This size and larger: @include media-breakpoint-up(xs) { ... }
+// - This size and smaller: @include media-breakpoint-down(xs) { ... }
+// - Only this size: @include media-breakpoint-only(xs) { ... }
+// - Between these sizes: @include media-breakpoint-between(md, xl) { ... }
+//
+////////////////////////////////////////////////////////////////////////////////
 
-    li {
-      display: block;
-    }
+
+//----- MEDIUM AND DOWN ----------------->>
+
+@include media-breakpoint-down(md) {
+  .toc {
+    background: $pf-black-100;
+    position: fixed;
+    right: 0;
+    top: 86px;
+  }
+}
+
+
+//----- LARGE AND UP ----------------->>
+
+@include media-breakpoint-up(lg) {
+  .toc {
+    flex: 0 0 314px;
   }
 
-  &>ul>li>ul>li>a,
-  &>ul>li>a {
-    font-weight: bold;
-    margin: 0 2px;
-  }
-
-  &>ul>li>ul>li>a {
-    font-style: italic;
+  .no-toc {
+    flex: 0 0 214px;
   }
 }

@@ -6,16 +6,20 @@
 @import 'navbar';
 
 body.home {
+  height: 100%;
+  width: 100%;
 
   #wrapper {
-    padding-top: $navbar-min-height;
+    padding-top: 0;
   }
 
   #main, #main .main-content {
     margin-left: 0 !important;
     margin-right: 0 !important;
+    overflow-x: auto;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    padding-top: 0;
     width: 100% !important;
   }
 
@@ -24,6 +28,8 @@ body.home {
   ////////////////////////////////////////////////////////////////////////////////
 
   nav.navbar {
+    background-color: transparent;
+
     &.sps--abv {
       background-color: transparent !important;
       transition: background-color 800ms ease-in-out;
@@ -41,6 +47,10 @@ body.home {
       padding: calc(#{$navbar-padding-y} + 74px) $navbar-padding-x 0;
       z-index: -1;
     }
+
+    .sub-nav-mobile {
+      display: none;
+    }
   }
 
 
@@ -50,8 +60,10 @@ body.home {
 
   .jumbotron {
     position: relative;
-    padding-top: $navbar-min-height + 16px;
-    margin-top: -$navbar-min-height;
+    //padding-top: $navbar-min-height + 16px;
+    padding-top: 100px;
+    //margin-top: -$navbar-min-height;
+    margin-top: 0;
 
     h1,h2,h3,h4,h5,h6 {
       text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
@@ -121,5 +133,49 @@ body.home {
     width: 100%;
     opacity: 0.5;
   }
-}
 
+
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // MOBILE ADJUSTMENTS
+  //
+  // Size Reference:
+  // - Extra small devices (xs) - Portrait phones (<544px)
+  // - Small devices (sm) - Landscape phones (≥544px - <768px)
+  // - Medium devices (md) - Tablets (≥768px - <992px)
+  // - Large devices (lg) - Desktops (≥992px - <1200px)
+  // - Extra large devices (xl) - Desktops (≥1200px)
+  //
+  // Responsive Breakpoints:
+  // - This size and larger: @include media-breakpoint-up(xs) { ... }
+  // - This size and smaller: @include media-breakpoint-down(xs) { ... }
+  // - Only this size: @include media-breakpoint-only(xs) { ... }
+  // - Between these sizes: @include media-breakpoint-between(md, xl) { ... }
+  //
+  ////////////////////////////////////////////////////////////////////////////////
+
+
+  //----- BETWEEN XS AND MEDIUM ----------------->>
+
+  // Display a background color for expanded navigation on smaller devices
+  @include media-breakpoint-between(xs, md) {
+
+    #wrapper {
+
+      .main-content {
+        margin-top: 0;
+
+        .jumbotron {
+          margin-top: -25px;
+        }
+      }
+    }
+
+    nav.navbar {
+      .collapsing, .collapse.show {
+        background-color: $pf-blue-400;
+        z-index: -1;
+      }
+    }
+  }
+}

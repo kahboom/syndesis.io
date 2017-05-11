@@ -1,0 +1,29 @@
+<nav class="navbar fixed-top navbar-inverse bg-primary navbar-toggleable-md sps sps--abv" id="topnav">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  <div class="collapse navbar-collapse" id="top-nav">
+    <ul class="navbar-nav ml-auto mt-2 mt-md-0 mr-lg-4">
+      {{ $page := .Page }}
+      {{ range .Site.Menus.topnav }}
+        {{ $is := $page.IsMenuCurrent "topnav" . }}
+        {{ $has := $page.HasMenuCurrent "topnav" . }}
+        <li class="nav-item ml-lg-3 ml-0">
+          <a class="nav-link{{ if or ($is) ($has) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="sub-nav-mobile hidden-md-up">
+    <button class="navbar-toggler for-sidenav" type="button" data-toggle="collapse" data-target="#sidenav" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {{ if .Params.toc }}
+    <button class="navbar-toggler float-right for-toc" type="button" data-toggle="collapse"  data-target="#toc"
+            aria-expanded="false">
+      TOC
+    </button>
+    {{ end }}
+  </div>
+</nav>

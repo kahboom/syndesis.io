@@ -3,19 +3,20 @@
 
 @import 'blog';
 @import 'colors';
-@import 'docs';
 @import 'footer';
 @import 'github-corner';
 @import 'home';
 @import 'icons';
 @import 'navbar';
+@import 'pages';
 @import 'sidenav';
 @import 'toc';
 @import 'highlighting';
 
-html, body {
-  height: 100%;
-  width: 100%;
+html {
+  /* must be relative for scrollspy to work */
+  position: relative;
+  min-height: 100%;
 }
 
 #wrapper {
@@ -27,19 +28,83 @@ html, body {
 #main {
   padding-bottom: 20rem;
 
-  @include media-breakpoint-down(sm) {
-    padding-bottom: 32rem;
-  }
-
   .main-content {
+    padding-bottom: 150px;
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+  }
 
-    @include media-breakpoint-up(lg) {
-      width: calc(100% - 214px - 314px);
+
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // MOBILE ADJUSTMENTS
+  //
+  // Size Reference:
+  // - Extra small devices (xs) - Portrait phones (<544px)
+  // - Small devices (sm) - Landscape phones (≥544px - <768px)
+  // - Medium devices (md) - Tablets (≥768px - <992px)
+  // - Large devices (lg) - Desktops (≥992px - <1200px)
+  // - Extra large devices (xl) - Desktops (≥1200px)
+  //
+  // Responsive Breakpoints:
+  // - This size and larger: @include media-breakpoint-up(xs) { ... }
+  // - This size and smaller: @include media-breakpoint-down(xs) { ... }
+  // - Only this size: @include media-breakpoint-only(xs) { ... }
+  // - Between these sizes: @include media-breakpoint-between(md, xl) { ... }
+  //
+  ////////////////////////////////////////////////////////////////////////////////
+
+
+  //----- SMALL AND DOWN ----------------->>
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 32rem;
+
+    .main-content {
+      .articleBody {
+        max-width: 100%;
+        overflow: hidden;
+        word-wrap: break-word;
+      }
     }
   }
+
+  //----- MEDIUM AND DOWN ----------------->>
+
+  @include media-breakpoint-down(md) {
+    .main-content {
+      margin-top: 25px;
+      padding-bottom: 75px;
+
+      .full-width-feature.text-center {
+        padding: 0 5px;
+      }
+    }
+  }
+
+
+  //----- MEDIUM ONLY ----------------->>
+
+  @include media-breakpoint-only(md) {
+    .main-content {
+      margin-top: 0;
+    }
+  }
+
+
+  //----- LARGE AND UP ----------------->>
+
+  @include media-breakpoint-up(lg) {
+    .main-content {
+      width: calc(100% - 214px - 314px);
+
+      .article {
+        padding-bottom: 25%;
+      }
+    }
+  }
+
 }
 
 :target::before {

@@ -28,24 +28,33 @@
 <body class="{{ .Type }}{{ if .IsHome }} home{{ end }}">
   <div id="wrapper">
     {{ partial "github-corner.html" .}}
-    {{ partial "topnav" . }}
+    {{ partial "navbar" . }}
 
-    <div id="main"{{ if not .IsHome }} class="d-flex flex-row"{{ end}}>
-      {{ if not .IsHome }}<div id="sidebar" class="sidenav{{ if not (isset .Params "sidebar") }} no-sidebar{{ end }}">{{ if isset .Params "sidebar" }}{{ partial "sidenav" . }}{{ end }}</div>{{ end }}
-      <div class="main-content">
+    <div id="main" class="{{ if not .IsHome }}container-fluid h-100{{ end }}">
+      <div class="row h-100">
+        {{ if not .IsHome }}
+        <div id="sidenav-container" class="sidenav-container{{ if not (isset .Params "sidebar") }} no-sidenav{{ end }} navbar-toggleable-md">
+        {{ if isset .Params "sidebar" }}
+        {{ partial "sidenav" . }}
+        {{ end }}</div>
+      {{ end }}
+      <div class="main-content {{ if not .IsHome }}col fluid{{ end }}">
         {{ block "main" . }}{{ end }}
       </div>
       {{ if .Params.toc }}
-        <div class="toc hidden-md-down">
+      <div class="toc navbar-toggleable-md">
+        <div id="toc" class="collapse navbar-collapse">
           {{ .TableOfContents }}
         </div>
+      </div>
       {{ else }}
-        <div class="no-toc hidden-md-down"></div>
+      <div class="no-toc hidden-md-down"></div>
       {{ end}}
+      </div>
     </div>
-
-    {{ partial "footer" . }}
   </div>
+
+  {{ partial "footer" . }}
 
   <script src="/js/syndesis.js"></script>
   {{ block "pagejs" . }}{{ end }}

@@ -2,50 +2,106 @@
 // FOOTER
 ////////////////////////////////////////////////////////////////////////////////
 
+@import './bootstrap/_variables';
 @import 'colors';
 
-.page-footer {
+.footer {
   background-color: $pf-black;
   color: $pf-white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  height: 20rem;
+  height: $footer-height;
+  //margin-bottom: $footer-height;
+  margin-left: 0;
+  margin-right: 0;
   position: absolute;
   bottom: 0;
+  //line-height: $footer-height;
   width: 100%;
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  @include media-breakpoint-down(sm) {
-    height: 32rem;
-  }
 
   .btn-primary {
     @include button-variant($pf-white, $pf-red-200, $pf-black);
     font-weight: bold;
     width: 40%;
-
-    @include media-breakpoint-down(lg) {
-      width: 70%;
-    }
-
-    @include media-breakpoint-down(md) {
-      width: 60%;
-    }
-
-    @include media-breakpoint-down(xs) {
-      width: 70%;
-    }
   }
 
   .rh-logo {
-    padding-top: 2rem;
+    text-align: center;
+
+    a {
+      margin: 0 auto 50px;
+    }
+  }
+
+  .row {
+    background: inherit;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+
+    .col {
+      padding: 0;
+    }
   }
 
   h4 {
     font-family: $font-family-base;
+  }
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // MOBILE ADJUSTMENTS
+  //
+  // Size Reference:
+  // - Extra small devices (xs) - Portrait phones (<544px)
+  // - Small devices (sm) - Landscape phones (≥544px - <768px)
+  // - Medium devices (md) - Tablets (≥768px - <992px)
+  // - Large devices (lg) - Desktops (≥992px - <1200px)
+  // - Extra large devices (xl) - Desktops (≥1200px)
+  //
+  // Responsive Breakpoints:
+  // - This size and larger: @include media-breakpoint-up(xs) { ... }
+  // - This size and smaller: @include media-breakpoint-down(xs) { ... }
+  // - Only this size: @include media-breakpoint-only(xs) { ... }
+  // - Between these sizes: @include media-breakpoint-between(md, xl) { ... }
+  //
+  ////////////////////////////////////////////////////////////////////////////////
+
+
+
+  //----- EXTRA SMALL OR SMALLER ----------------->>
+
+  @include media-breakpoint-down(xs) {
+    .btn-primary {
+      width: 70%;
+    }
+  }
+
+
+  //----- SMALL OR SMALLER ----------------->>
+
+  @include media-breakpoint-down(sm) {
+    //height: 32rem;
+  }
+
+
+  //----- MEDIUM OR SMALLER ----------------->>
+
+  @include media-breakpoint-down(md) {
+    .btn-primary {
+      width: 60%;
+    }
+
+    .link-button a {
+      font-size: small;
+      overflow: auto;
+    }
+  }
+
+  //----- LARGE OR SMALLER ----------------->>
+
+  @include media-breakpoint-down(lg) {
+    .btn-primary {
+      width: 70%;
+    }
   }
 }

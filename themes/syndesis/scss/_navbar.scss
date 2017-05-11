@@ -32,5 +32,63 @@ nav.navbar {
       border-bottom: 1px solid $pf-white;
     }
   }
+
+  .sub-nav-mobile {
+    margin: 0 -12px -6px;
+    background: $pf-blue-300;
+
+    .navbar-toggler {
+      border: 0;
+    }
+  }
+
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // MOBILE ADJUSTMENTS
+  //
+  // Size Reference:
+  // - Extra small devices (xs) - Portrait phones (<544px)
+  // - Small devices (sm) - Landscape phones (≥544px - <768px)
+  // - Medium devices (md) - Tablets (≥768px - <992px)
+  // - Large devices (lg) - Desktops (≥992px - <1200px)
+  // - Extra large devices (xl) - Desktops (≥1200px)
+  //
+  // Responsive Breakpoints:
+  // - This size and larger: @include media-breakpoint-up(xs) { ... }
+  // - This size and smaller: @include media-breakpoint-down(xs) { ... }
+  // - Only this size: @include media-breakpoint-only(xs) { ... }
+  // - Between these sizes: @include media-breakpoint-between(md, xl) { ... }
+  //
+  ////////////////////////////////////////////////////////////////////////////////
+
+
+  //----- MEDIUM AND DOWN ----------------->>
+
+  @include media-breakpoint-down(md) {
+    //padding: 6px 12px;
+    padding: 6px 15px;
+
+    .navbar-toggler {
+      font-size: medium;
+      margin-top: 7px;
+      outline: 0 !important;
+
+      :focus {
+        outline: 0 !important;
+        -webkit-appearance: none;
+      }
+
+      &.navbar-toggler-right {
+        border: 0;
+        padding: 5px 0;
+        left: auto;
+        right: 15px;
+      }
+    }
+
+    .navbar-brand {
+      margin-right: 0;
+    }
+  }
 }
 
