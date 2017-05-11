@@ -1,4 +1,5 @@
 baseURL = "/"
+canonifyURLs = true
 languageCode = "en-gb"
 enableGitInfo = true
 title = "Syndesis"
