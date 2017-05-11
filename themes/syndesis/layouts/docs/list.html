@@ -1,0 +1,24 @@
+{{ define "title"}} {{ .Title }} {{ end }}
+
+{{ define "header"}}
+{{ partial "header-blog" .}}
+{{ end }}
+
+{{ define "main"}}
+
+<div class="docs list">
+  <div id="hero"
+       class="wrap title">
+    <h1>Docs</h1>
+    <p>Everything there is to know about Syndesis<br>
+      <a href="{{.Params.twitter}}">Follow us on Twitter</a>
+    </p>
+  </div>
+  <div class="articles">
+    {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" .}} {{ end }}
+    <section>{{ partial "pagination" .}}</section>
+  </div>
+</div>
+
+{{ end }}
+{{ define "footer"}} {{ partial "footer.html" .}} {{ end }}

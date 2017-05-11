@@ -1,11 +1,25 @@
 @import '../../../node_modules/font-awesome/scss/font-awesome';
 @import 'colors';
+@import 'nav';
 
 ////////////////////////////////////////////////////////////////////////////////
 // DOCS
 ////////////////////////////////////////////////////////////////////////////////
 
 .docs {
-  &.sidebar {}
+  &.list {
+    background-color: $pf-white;
+    margin: $nav-height 0 0 !important;
+    padding: 25px;
+
+    .articles {}
+
+    .sidebar {}
+
+    .title {
+      padding: 15px 0;
+    }
+  }
 }
+
 
