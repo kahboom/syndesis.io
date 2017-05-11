@@ -9,8 +9,9 @@
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-      <li class="nav-item"><a href="{{ .URL }}" {{if  $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>{{ .Name }}</a></li>
+      <li class="nav-item"><a href="{{ .URL }}" class="nav-link" {{if  $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>{{ .Name }}</a></li>
       {{end}}
+      <!--
       <li class="nav-item">
         <a class="nav-link disabled"
            href="/page">{{ .Page.Kind }}
@@ -22,6 +23,7 @@
       <li class="nav-item">
         <a class="nav-link">{{ .Page.Kind }}</a>
       </li>
+      -->
     </ul>
   </div>
 </nav>
