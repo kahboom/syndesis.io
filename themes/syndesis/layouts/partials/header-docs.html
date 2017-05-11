@@ -11,16 +11,6 @@
       {{ range .Site.Menus.main }}
       <li class="nav-item"><a href="{{ .URL }}" class="nav-link" {{if  $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>{{ .Name }}</a></li>
       {{end}}
-      <!--
-      <li class="nav-item">
-        <a class="nav-link disabled"
-           href="/page">{{ .Page.Kind }}
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">This is the Docs Header.</a>
-      </li>
-      -->
     </ul>
   </div>
 </nav>
