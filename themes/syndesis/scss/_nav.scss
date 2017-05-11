@@ -1,0 +1,67 @@
+@import '../../../node_modules/font-awesome/scss/font-awesome';
+@import 'colors';
+
+$nav-height: 74px;
+
+////////////////////////////////////////////////////////////////////////////////
+// NAV
+////////////////////////////////////////////////////////////////////////////////
+
+.navbar {
+  height: $nav-height;
+  max-height: $nav-height;
+
+  &.sps--abv {
+    background-color: transparent !important;
+    transition: background-color 800ms ease-in-out;
+  }
+
+  &.sps--blw {
+    transition: background-color 800ms ease-in-out;
+  }
+
+  a, a:visited, a:focus, a:hover {
+    cursor: pointer;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+
+
+  //----- Blog & Docs Navigation Bar ----------------->>
+
+  &.blog, &.docs {
+    background-color: #0088ce !important;
+    color: $pf-white;
+
+    .nav-link {
+      color: $pf-white;
+
+      &:hover {
+        color: $pf-blue-100;
+      }
+    }
+  }
+
+
+  //----- Common ----------------->>
+
+
+  .navbar-brand {
+    font-family: Righteous, cursive;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+
+    .collapse .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
