@@ -1,5 +1,5 @@
-{{ define "title"}} {{ .Title}} {{end}}
-{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "title" }} {{ .Title}} {{ end }}
+{{ define "header" }} {{ partial "header.docs" .}} {{ end }}
 
 {{ define "main" }}
 
@@ -14,5 +14,5 @@
 
 {{ end }}
 {{ define "footer" }}
-{{ partial "footer" . }}
+{{ partial "footer" .}}
 {{ end }}

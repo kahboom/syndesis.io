@@ -8,7 +8,7 @@
         content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
-  <title>{{ block "title" .}}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
   {{ with .Description }}
   <meta name="description"
@@ -23,13 +23,13 @@
         content="noindex">
   {{ end }}
 
-  {{ partial "meta/name-author" .}}
-  {{ template "_internal/opengraph.html" .}}
-  {{ partial "meta/ogimage" .}}
+  {{ partial "meta/name-author" . }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ partial "meta/ogimage" . }}
   <!-- Site verification -->
-  {{ if .IsHome }} {{ partial "site-verification" .}} {{ end }}
+  {{ if .IsHome }} {{ partial "site-verification" . }} {{ end }}
   <!-- add googleAnalytics in config.toml -->
-  {{ template "_internal/google_analytics_async.html" .}}
+  {{ template "_internal/google_analytics_async.html" . }}
   {{ if .RSSLink }}
   <link href="{{ .RSSLink }}"
         rel="alternate"
@@ -51,13 +51,13 @@
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="stylesheet" href="/css/syndesis.css">
 
-  {{ template "_internal/google_analytics.html" .}}
+  {{ template "_internal/google_analytics.html" . }}
 
 </head>
 
 <body>
 
-<header>{{ block "header-default" . }}{{ end }}</header>
+<header>{{ block "header-blog" . }}{{ end }}</header>
 
 <div class="main">{{ block "main" . }}{{ end }}</div>
 

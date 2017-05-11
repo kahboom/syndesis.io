@@ -1,8 +1,7 @@
 {{ define "title" }} {{ .Site.Title }} {{ end }}
 
 {{ define "header" }}
-{{ $.Scratch.Add "splash" true }}
-{{ partial "header" .}}
+{{ partial "header-default" .}}
 {{ end }}
 
 {{ define "main" }}
@@ -183,4 +182,4 @@
   }
 </script>
 {{ end }}
-{{ define "footer"}} {{ partial "footer" .}} {{end}}
+{{ define "footer" }} {{ partial "footer" .}} {{ end }}

@@ -1,8 +1,7 @@
 {{ define "title" }} {{ .Title }} {{ end }}
 
-{{ define "header"}}
-{{ $.Scratch.Add "splash" false }}
-{{ partial "header" .}}
+{{ define "header" }}
+{{ partial "header-docs" .}}
 {{ end }}
 
 {{ define "main" }}
@@ -28,4 +27,4 @@
 
 {{ end }}
 
-{{ define "footer" }} {{ partial "footer" .}} {{ end} }
+{{ define "footer" }} {{ partial "footer" .}} {{ end }}

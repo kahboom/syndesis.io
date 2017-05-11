@@ -1,13 +1,12 @@
-{{ define "title"}} {{ .Title}} {{end}}
+{{ define "title"}} {{ .Title }} {{ end }}
 
 {{ define "header"}}
-{{ .Scratch.Set "IsSingle" false }}
-{{ partial "header" .}}
-{{end}}
+{{ partial "header-blog" . }}
+{{ end }}
 
 {{ define "main"}}
 <div itemscope itemtype="http://schema.org/BlogPosting">
-  {{ template "_internal/schema.html" . }}
+  {{ template "_internal/schema.html" .}}
   <!--
   <div id="hero">
     <h1 itemprop="headline">  {{.Title}}</h1>
@@ -20,7 +19,7 @@
   <div id="post-box">
     <div id="post" itemprop="articleBody">
 
-      {{.Content | safeHTML}}
+      {{ .Content | safeHTML }}
 
     </div>
 
@@ -48,13 +47,13 @@
     </div>
 
     <div class="">
-      {{ partial "post/byauthor" . }}
-      {{ partial "post/related-content" . }}
+      {{ partial "post/byauthor" .}}
+      {{ partial "post/related-content" .}}
     </div>
 
     {{ if .Site.DisqusShortname }}
     <article>
-      {{ template "_internal/disqus.html" . }}
+      {{ template "_internal/disqus.html" .}}
     </article>
     {{ end }}
 

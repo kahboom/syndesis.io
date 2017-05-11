@@ -1,5 +1,5 @@
-{{ define "title"}} {{ .Title}} {{end}}
-{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "title" }} {{ .Title }} {{ end }}
+{{ define "header" }} {{ partial "header-blog" .}} {{ end }}
 
 {{ define "main" }}
 
@@ -9,11 +9,11 @@
 </div>
 <ul id="posts">
 
-  {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" . }} {{ end }}
+  {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" .}} {{ end }}
   <section>{{ partial "pagination" .}}</section>
 </ul>
 
 {{ end }}
 {{ define "footer" }}
-{{ partial "footer" . }}
+{{ partial "footer" .}}
 {{ end }}
