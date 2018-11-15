@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syndesis</title>
-    <link>https://syndesis.io/</link>
+    <link>https://kahboom.github.io/syndesis.io/</link>
     <description>Recent content on Syndesis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 19 May 2017 15:02:30 +0100</lastBuildDate>
     
-	<atom:link href="https://syndesis.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kahboom.github.io/syndesis.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Syndesis CLI</title>
-      <link>https://syndesis.io/docs/cli/</link>
+      <link>https://kahboom.github.io/syndesis.io/docs/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/docs/cli/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/docs/cli/</guid>
       <description>Buildtool &amp;ldquo;syndesis&amp;rdquo; Syndesis uses a single tool for controlling various aspects of the build and developer related tasks. This script can be found in $SYNDESIS_DIR/tools/bin and is called syndesis. It requires bash and can be used on any Unix or macOS.
 To have this script handy all the time it is recommended to either put this bin/ directory into the path or add a symlink from syndesis into a directory which is already on your execution path.</description>
     </item>
     
     <item>
       <title>Engineering Guidelines</title>
-      <link>https://syndesis.io/community/engineering_guidelines/</link>
+      <link>https://kahboom.github.io/syndesis.io/community/engineering_guidelines/</link>
       <pubDate>Fri, 19 May 2017 15:02:30 +0100</pubDate>
       
-      <guid>https://syndesis.io/community/engineering_guidelines/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/community/engineering_guidelines/</guid>
       <description>Heads up! This is a work in progress... and may always be... Please check back regularly.  The Syndesis maintainers are always looking for the optimum way to develop Syndesis. We aim to have a development process that enables fast delivery across all features and components, taking into account priorities from the community. Speed of development has to be balanced against total community ownership, knowledge sharing, and stability of the software.</description>
     </item>
     
     <item>
       <title>Contributing to Syndesis</title>
-      <link>https://syndesis.io/community/contributing/</link>
+      <link>https://kahboom.github.io/syndesis.io/community/contributing/</link>
       <pubDate>Fri, 19 May 2017 14:40:12 +0100</pubDate>
       
-      <guid>https://syndesis.io/community/contributing/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/community/contributing/</guid>
       <description>There are many ways to contribute to Syndesis. All contributions are valued and welcomed, be it fixing a typo in documentation, raising an issue to report a bug, or creating a whole new awesome feature. Don&amp;rsquo;t worry if this is your first contribution to an open source project: the Syndesis maintainers can help you if you need it.
 Improving documentation Documentation is in various places in our repositories. We are committed to streamlining this, but for now there are a few different places to look.</description>
     </item>
     
     <item>
       <title>Quickstart</title>
-      <link>https://syndesis.io/quickstart/</link>
+      <link>https://kahboom.github.io/syndesis.io/quickstart/</link>
       <pubDate>Tue, 16 May 2017 15:58:18 +0100</pubDate>
       
-      <guid>https://syndesis.io/quickstart/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/quickstart/</guid>
       <description>You can try out Syndesis very easily locally, too. All you need is a Minishift installation which is available for all the major operating systems (Linux, OS X and Windows). The following examples assume that you have Minishift installed and can be called with minishift from the command line. So, minishift is supposed to be available in your search path, i.e. located in a directory contained in your $PATH environment variable (Linux, macOS) or in a directory from your system path (Windows)</description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://syndesis.io/docs/development/</link>
+      <link>https://kahboom.github.io/syndesis.io/docs/development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/docs/development/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/docs/development/</guid>
       <description>Maven Groups Syndesis uses Maven as build tool. Maven groups are used to separate the various Syndesis parts.
 In details Syndesis consists of the following groups:
    Group Maven Docker Image Description     common io.syndesis.common  Syndesis shared common module   connector io.syndesis.connector  Supported camel connectors   rest io.syndesis.rest syndesis/syndesis-server REST backend for managing integrations. This is the main sever.   integration io.</description>
@@ -62,19 +62,19 @@ In details Syndesis consists of the following groups:
     
     <item>
       <title>Announcing Syndesis</title>
-      <link>https://syndesis.io/blog/announcing-syndesis/</link>
+      <link>https://kahboom.github.io/syndesis.io/blog/announcing-syndesis/</link>
       <pubDate>Wed, 10 May 2017 16:42:50 +0100</pubDate>
       
-      <guid>https://syndesis.io/blog/announcing-syndesis/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/blog/announcing-syndesis/</guid>
       <description>The Integration Platform That’s For Everyone - No Coding Required. Best of All? Syndesis runs in the cloud or on-premise, on OpenShift or Kubernetes. The week before Red Hat Summit is always crazy, seemingly endless demo recordings, and lots of blood, sweat, and tears. So many tears. Even more so when your project is going to have it&amp;rsquo;s first public airing. And so our team is ecstatic to announce the release of Syndesis, a game-changing data integration platform that can be run in the cloud, requires no code whatsoever (but can be extended, should you be so inclined), and, in typical Red Hat fashion, is completely open source.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://syndesis.io/roadmap/</link>
+      <link>https://kahboom.github.io/syndesis.io/roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/roadmap/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/roadmap/</guid>
       <description>Roadmap Current Sprint: 12 Ends: May 12, 2017 (Fri)
 Preview Release Requirements &amp;amp; Stories
 JIRA Narrative
@@ -83,19 +83,19 @@ JIRA Issues for Keynote</description>
     
     <item>
       <title>About</title>
-      <link>https://syndesis.io/about/</link>
+      <link>https://kahboom.github.io/syndesis.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/about/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/about/</guid>
       <description>Syndesis is a flexible, customizable platform that provides core integration capabilities as a service. It can be run on the cloud or on premises with OpenShift or Kubernetes, is fully extensible and, best of all, is open source.</description>
     </item>
     
     <item>
       <title>Community</title>
-      <link>https://syndesis.io/community/</link>
+      <link>https://kahboom.github.io/syndesis.io/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/community/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/community/</guid>
       <description>We  community! Contributions and feedback in whatever form are always welcome, as long as they&amp;rsquo;re constructive!
 Here are some important links:
  Source code: GitHub organization Mailing list: Syndesis Google Group IRC: #syndesis on freenode  </description>
@@ -103,20 +103,20 @@ Here are some important links:
     
     <item>
       <title>Developer Docs</title>
-      <link>https://syndesis.io/docs/</link>
+      <link>https://kahboom.github.io/syndesis.io/docs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/docs/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/docs/</guid>
       <description>This handbook contain all information required for installing, running and developing Syndesis from a developer&amp;rsquo;s point of view.
 Please use the links in the sidebar on the left to navigate the Developer Docs.</description>
     </item>
     
     <item>
       <title>FAQ</title>
-      <link>https://syndesis.io/faq/</link>
+      <link>https://kahboom.github.io/syndesis.io/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syndesis.io/faq/</guid>
+      <guid>https://kahboom.github.io/syndesis.io/faq/</guid>
       <description>Syndesis looks awesome. Who is it for? Anyone that wants to integrate services. Syndesis includes a swish UI that enables the user to design integration flows and manage them from their browser.
 No coding required&amp;hellip; Unless you really want to and then Syndesis allows you to dive into the code, develop your own connectors (if one doesn&amp;rsquo;t already exist), or hack on the integration definition directly.
 How to read logs?</description>
