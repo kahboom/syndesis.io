@@ -55,7 +55,9 @@ Improving documentation Documentation is in various places in our repositories. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://syndesis.io/docs/development/</guid>
-      <description>Development stuff.</description>
+      <description>Maven Groups Syndesis uses Maven as build tool. Maven groups are used to separate the various Syndesis parts.
+In details Syndesis consists of the following groups:
+   Group Maven Docker Image Description     common io.syndesis.common  Syndesis shared common module   connector io.syndesis.connector  Supported camel connectors   rest io.syndesis.rest syndesis/syndesis-server REST backend for managing integrations. This is the main sever.   integration io.</description>
     </item>
     
     <item>
@@ -105,7 +107,8 @@ Here are some important links:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://syndesis.io/docs/</guid>
-      <description>This handbook contain all information required for installing, running and developing Syndesis from a developer&amp;rsquo;s point of view.</description>
+      <description>This handbook contain all information required for installing, running and developing Syndesis from a developer&amp;rsquo;s point of view.
+Please use the links in the sidebar on the left to navigate the Developer Docs.</description>
     </item>
     
     <item>
