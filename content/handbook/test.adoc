@@ -1,0 +1,28 @@
+---
+draft: false
+title: "Test"
+sidebar: "sidenav"
+menu:
+  sidenav:
+    name: Test
+    weight: 6
+    parent: Developer Handbook
+toc: true
+weight: 20
+---
+
+:source-highlighter: rouge
+:rouge-style: molokai
+:icons: font
+
+[NOTE]
+====
+There are things to note!
+====
+
+```java,linenums
+public static void main( String args[] ) {
+    System.out.println("Foobar!"); <1>
+}
+```
+<1> Print something
