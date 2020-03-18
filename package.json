@@ -40,5 +40,8 @@
     "sass-lint": "1.13.1",
     "scrollpos-styler": "0.7.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "deploy": "gulp"
+  }
 }
