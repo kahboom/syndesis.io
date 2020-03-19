@@ -1,34 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docs on Syndesis</title>
-    <link>https://kahboom.github.io/syndesis.io/docs/</link>
-    <description>Recent content in Docs on Syndesis</description>
+    <title>Docs on Syndesis - Open source integration platform</title>
+    <link>https://syndesis.io/docs/</link>
+    <description>Recent content in Docs on Syndesis - Open source integration platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
+    <lastBuildDate>Fri, 19 May 2017 15:02:30 +0100</lastBuildDate>
     
-	<atom:link href="https://kahboom.github.io/syndesis.io/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://syndesis.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Syndesis CLI</title>
-      <link>https://kahboom.github.io/syndesis.io/docs/cli/</link>
+      <title>CLI - Command Line Interface</title>
+      <link>https://syndesis.io/docs/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kahboom.github.io/syndesis.io/docs/cli/</guid>
+      <guid>https://syndesis.io/docs/cli/</guid>
       <description>Buildtool &amp;ldquo;syndesis&amp;rdquo; Syndesis uses a single tool for controlling various aspects of the build and developer related tasks. This script can be found in $SYNDESIS_DIR/tools/bin and is called syndesis. It requires bash and can be used on any Unix or macOS.
 To have this script handy all the time it is recommended to either put this bin/ directory into the path or add a symlink from syndesis into a directory which is already on your execution path.</description>
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://kahboom.github.io/syndesis.io/docs/development/</link>
+      <title>Categorization</title>
+      <link>https://syndesis.io/docs/categorization/</link>
+      <pubDate>Fri, 19 May 2017 15:02:30 +0100</pubDate>
+      
+      <guid>https://syndesis.io/docs/categorization/</guid>
+      <description>On this section we will explore how to contribute to the project with issues and pull requests.
+Issue Labels We use GitHub labels to categorize epics, issues and tasks. They are the foundation of our process, so please use labels for issues.
+ Labels are living entities. This document describes the current status and might be slightly outdated. Please send a PR to adopt this section if the label structure changes.</description>
+    </item>
+    
+    <item>
+      <title>Engineering Guidelines</title>
+      <link>https://syndesis.io/docs/engineering_guidelines/</link>
+      <pubDate>Fri, 19 May 2017 15:02:30 +0100</pubDate>
+      
+      <guid>https://syndesis.io/docs/engineering_guidelines/</guid>
+      <description>Heads up! This is a work in progress... and may always be... Please check back regularly.  The Syndesis maintainers are always looking for the optimum way to develop Syndesis. We aim to have a development process that enables fast delivery across all features and components, taking into account priorities from the community. Speed of development has to be balanced against total community ownership, knowledge sharing, and stability of the software.</description>
+    </item>
+    
+    <item>
+      <title>How to contribute to Syndesis</title>
+      <link>https://syndesis.io/docs/contributing/</link>
+      <pubDate>Fri, 19 May 2017 14:40:12 +0100</pubDate>
+      
+      <guid>https://syndesis.io/docs/contributing/</guid>
+      <description>There are many ways to contribute to Syndesis. All contributions are valued and welcomed, be it fixing a typo in documentation, raising an issue to report a bug, or creating a whole new awesome feature. Don&amp;rsquo;t worry if this is your first contribution to an open source project: the Syndesis maintainers can help you if you need it.
+Improving documentation Documentation is in various places in our repositories. We are committed to streamlining this, but for now there are a few different places to look.</description>
+    </item>
+    
+    <item>
+      <title>Architecture</title>
+      <link>https://syndesis.io/docs/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kahboom.github.io/syndesis.io/docs/development/</guid>
+      <guid>https://syndesis.io/docs/architecture/</guid>
+      <description>This document want to illustrates at high level some of the components that makes up Syndesis and how they are communicating together to finally serves the creation of an integration. We are using Apache Camel as a runtime target, though it would be possible to extend the project and makes it suitable to any other integration platform.
+Disclaimer: the content illustrated here is related to version 1.8, it can change in future versions.</description>
+    </item>
+    
+    <item>
+      <title>Connection Autodiscovery</title>
+      <link>https://syndesis.io/docs/autodiscovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/autodiscovery/</guid>
+      <description>Any integration you need to create typically starts and ends to a data source. Thanks to Syndesis you will be able to discover automatically any of those data sources and make easier the configuration of connection for the citizen integrator. Any connector can provide the &amp;ldquo;Connection Autodiscovery&amp;rdquo; feature by making a little extra development and using any kind of service registry you have at your disposal.
+JSON Descriptor The first thing we need to do is to configure the json connector configuration.</description>
+    </item>
+    
+    <item>
+      <title>Connector Schema</title>
+      <link>https://syndesis.io/docs/connector-schema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/connector-schema/</guid>
+      <description>As we&amp;rsquo;ve already seen in the Connector Development guidelines, the connection to or from a generic data source is proxied by the presence of the Connector Proxy component. In this page you will find how to configure it in all its details. The descriptor does a fundamental job in linking together the GUI (who will use the configuration to dynamically define the connector behavior), the server, the meta (which can be required to serve certain meta information dynamically) and finally the integration platform runtime where the application will run (being Apache Camel the one we use as reference).</description>
+    </item>
+    
+    <item>
+      <title>Data Shapes</title>
+      <link>https://syndesis.io/docs/datashapes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/datashapes/</guid>
+      <description>A very important feature of any integration platform is to manage transparently the data format between the source and the destination channel. Syndesis and the powerful visual data mapper tool bundled with it, simplifies this concept with the definition of a datashape.
+A datashape is a way to describe any inbound/outbound message format and to allow the user to easily map each data property in the integration step: said in other words, you will be able to transform on the fly the input/output of the data involved in an integration.</description>
+    </item>
+    
+    <item>
+      <title>Day to Day</title>
+      <link>https://syndesis.io/docs/day_to_day/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/day_to_day/</guid>
+      <description>This uses an existing Minishift instance.
+NOTE: If you already followed the First-Time Setup section, you do not need to follow this. The Minishift VM will already have been started. Simply skip to the
+Get the Latest Changes $ git checkout master $ git pull upstream master $ git checkout &amp;lt;branch&amp;gt; $ git rebase master Start of the Day Make sure Minishift is running.
+$ minishift status Which should look like:</description>
+    </item>
+    
+    <item>
+      <title>Development QuickStart</title>
+      <link>https://syndesis.io/docs/development_quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/development_quickstart/</guid>
+      <description>If you’d like to get a local development environment up and running, for both the UI and REST API, this is how you’d do it.
+Tips
+ Build on branch, not master. Callback URL Example: https://syndesis.192.168.64.29.nip.io/api/v1/credentials/callback  Requirements You can follow these steps if it’s your first time setting up Syndesis, or if you want a fresh local installation to replace an existing one. Some environment-specific instructions may be available below as well.</description>
+    </item>
+    
+    <item>
+      <title>How to develop a connector</title>
+      <link>https://syndesis.io/docs/connectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/connectors/</guid>
+      <description>If Syndesis does not provide a connector for the application or service that you want to connect to in an integration, an experienced developer can develop and contribute a new Syndesis connector.
+This documentation provides details about developing, testing, and deploying a new Syndesis connector. It uses the example of creating the MongoDB connector to illustrate internal behavior and analyze development choices.
+Before you start to develop a connector, you should:</description>
+    </item>
+    
+    <item>
+      <title>Maven Architecture</title>
+      <link>https://syndesis.io/docs/architecture/maven_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syndesis.io/docs/architecture/maven_architecture/</guid>
       <description>Maven Groups Syndesis uses Maven as build tool. Maven groups are used to separate the various Syndesis parts.
 In details Syndesis consists of the following groups:
-   Group Maven Docker Image Description     common io.syndesis.common  Syndesis shared common module   connector io.syndesis.connector  Supported camel connectors   rest io.syndesis.rest syndesis/syndesis-server REST backend for managing integrations. This is the main sever.   integration io.</description>
+   Group Package Docker Image Description     common io.syndesis.common  Syndesis shared common module   connector io.syndesis.connector  Supported connectors   dv io.syndesis.dv  Tool that manages dynamic VDBs for the Teiid OpenShift Deployment.   extension io.</description>
     </item>
     
   </channel>
