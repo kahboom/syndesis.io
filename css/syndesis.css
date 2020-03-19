@@ -1339,73 +1339,74 @@ nav.navbar .nav-link:hover {
       border-bottom: 1px dashed #FFFFFF; }
 nav.navbar .nav-link.active, nav.navbar .nav-link:active, nav.navbar .nav-link:focus {
       border-bottom: 1px solid #FFFFFF; }
+body.home {
+  color: #582fc0; }
 body.home #wrapper {
-  padding-top: 74px; }
+    padding-top: 74px; }
 body.home #main, body.home #main .main-content {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100% !important; }
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important; }
 body.home nav.navbar.sps--abv {
-  background-color: transparent !important;
-  transition: background-color 800ms ease-in-out; }
+    background-color: transparent !important;
+    transition: background-color 800ms ease-in-out; }
 body.home nav.navbar .collapsing, body.home nav.navbar .collapse.show {
-  background-color: #0088ce;
-  width: calc(100% + (2 * 1.5rem));
-  margin: calc(-0.75rem - 74px)-1.5rem 0;
-  padding: calc(0.75rem + 74px) 1.5rem 0;
-  z-index: -1; }
+    background-color: #0088ce;
+    width: calc(100% + (2 * 1.5rem));
+    margin: calc(-0.75rem - 74px)-1.5rem 0;
+    padding: calc(0.75rem + 74px) 1.5rem 0;
+    z-index: -1; }
 body.home .jumbotron {
-  color: #a18fff !important;
-  position: relative;
-  padding-top: 90px;
-  margin-top: -74px; }
+    position: relative;
+    padding-top: 90px;
+    margin-top: -74px; }
 body.home .jumbotron h1 {
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); }
+      text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); }
 body.home .jumbotron .title {
-    color: #bee1f4; }
+      color: #bee1f4; }
 body.home .jumbotron .lead {
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); }
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); }
 body.home .jumbotron .btn-get-started {
-    color: #0088ce;
-    background-color: #FFFFFF;
-    border-color: #FFFFFF; }
-body.home .jumbotron .btn-get-started:hover {
       color: #0088ce;
-      background-color: #e6e6e6;
-      border-color: #e0e0e0; }
-body.home .jumbotron .btn-get-started:focus {
-      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); }
-body.home .jumbotron .btn-get-started:disabled {
       background-color: #FFFFFF;
       border-color: #FFFFFF; }
-body.home .jumbotron .btn-get-started:active {
-      color: #0088ce;
-      background-color: #e6e6e6;
-      background-image: none;
-      border-color: #e0e0e0; }
 body.home .jumbotron .btn-get-started:hover {
-      color: #FFFFFF;
-      background-color: #0088ce;
-      border-color: #FFFFFF; }
+        color: #0088ce;
+        background-color: #e6e6e6;
+        border-color: #e0e0e0; }
+body.home .jumbotron .btn-get-started:focus {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); }
+body.home .jumbotron .btn-get-started:disabled {
+        background-color: #FFFFFF;
+        border-color: #FFFFFF; }
+body.home .jumbotron .btn-get-started:active {
+        color: #0088ce;
+        background-color: #e6e6e6;
+        background-image: none;
+        border-color: #e0e0e0; }
+body.home .jumbotron .btn-get-started:hover {
+        color: #FFFFFF;
+        background-color: #0088ce;
+        border-color: #FFFFFF; }
 body.home .mailing-list {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #5bc0de; }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #5bc0de; }
 body.home .mailing-list .lead {
-    text-shadow: none; }
+      text-shadow: none; }
 body.home .mailing-list .btn {
-    font-weight: bold; }
+      font-weight: bold; }
 body.home .full-width-feature .screenshot {
-  width: 100%;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5); }
+    width: 100%;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5); }
 body.home #particles {
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 0.5; }
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.5; }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
